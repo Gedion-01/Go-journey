@@ -9,9 +9,11 @@ func main() {
 
 func fib(n int) int {
 	x, y := 0, 1
+	fmt.Println("initial x & y: ", x, y)
 	for i := 0; i < n; i++ {
-		x, y = y, x + y
-		fmt.Println(y, x, "+", y)
+		fmt.Println("=> ", x, "+", y)
+		x, y = y, x+y
+		fmt.Println("x & y result: ", x, y)
 	}
 	return x
 }
